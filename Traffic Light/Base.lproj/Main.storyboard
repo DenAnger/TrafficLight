@@ -21,67 +21,50 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4y-QT-0U6" userLabel="Red">
                                 <rect key="frame" x="167" y="144" width="80" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.016365062819803211" blue="0.071995231627588585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A4y-QT-0U6" secondAttribute="height" multiplier="1:1" id="ZIP-5C-3sW"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7w1-31-kNz" userLabel="Yellow">
-                                <rect key="frame" x="167" y="271" width="80" height="80"/>
+                                <rect key="frame" x="167" y="264" width="80" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.94465292922545474" blue="0.043790491545390164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7w1-31-kNz" secondAttribute="height" multiplier="1:1" id="zes-rh-TVs"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O6v-3s-mTZ" userLabel="Green">
-                                <rect key="frame" x="167" y="395" width="80" height="80"/>
+                                <rect key="frame" x="167" y="384" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.095443500819999999" green="1" blue="0.086497409420000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="O6v-3s-mTZ" secondAttribute="height" multiplier="1:1" id="vCF-VZ-OMd"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLR-0o-vvt">
-                                <rect key="frame" x="118" y="664" width="178" height="45"/>
+                                <rect key="frame" x="118" y="665" width="178" height="44"/>
                                 <color key="backgroundColor" red="1" green="0.79145246440000006" blue="0.42287165939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="nP2-SS-O7D"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="Start">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="startPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YYV-wN-PUx"/>
+                                    <action selector="startPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="cay-Sx-w67"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.00069949683591782918" green="0.67003877545854862" blue="0.89704096502590669" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="O6v-3s-mTZ" firstAttribute="top" secondItem="7w1-31-kNz" secondAttribute="bottom" constant="40" id="2Q8-Pv-rn3"/>
                             <constraint firstItem="A4y-QT-0U6" firstAttribute="centerX" secondItem="XLR-0o-vvt" secondAttribute="centerX" id="7eY-tf-1Ky"/>
-                            <constraint firstItem="7w1-31-kNz" firstAttribute="top" secondItem="A4y-QT-0U6" secondAttribute="bottom" constant="47" id="8eG-Kl-kyr"/>
-                            <constraint firstItem="7w1-31-kNz" firstAttribute="trailing" secondItem="O6v-3s-mTZ" secondAttribute="trailing" id="Iv4-V7-BiU"/>
-                            <constraint firstItem="7w1-31-kNz" firstAttribute="leading" secondItem="O6v-3s-mTZ" secondAttribute="leading" id="KsE-4K-4Hp"/>
-                            <constraint firstItem="O6v-3s-mTZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="395" id="Ngv-Xk-18E"/>
-                            <constraint firstItem="7w1-31-kNz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="271" id="PBu-4p-ubw"/>
+                            <constraint firstItem="7w1-31-kNz" firstAttribute="top" secondItem="A4y-QT-0U6" secondAttribute="bottom" constant="40" id="ECA-61-bhP"/>
+                            <constraint firstItem="O6v-3s-mTZ" firstAttribute="centerX" secondItem="7w1-31-kNz" secondAttribute="centerX" id="GqE-nw-Gcj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XLR-0o-vvt" secondAttribute="bottom" constant="153" id="QmY-Vd-D0Z"/>
+                            <constraint firstItem="O6v-3s-mTZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="5:56" id="T4a-4K-h4w"/>
+                            <constraint firstItem="A4y-QT-0U6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="TAl-BT-mPw"/>
+                            <constraint firstItem="7w1-31-kNz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="5:56" id="VDQ-9X-vMb"/>
                             <constraint firstItem="A4y-QT-0U6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZOJ-v9-8r7"/>
-                            <constraint firstItem="A4y-QT-0U6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="167" id="Zo7-Xw-iZz"/>
+                            <constraint firstItem="A4y-QT-0U6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="5:56" id="dNN-xb-Lz2"/>
                             <constraint firstItem="A4y-QT-0U6" firstAttribute="leading" secondItem="7w1-31-kNz" secondAttribute="leading" id="fhQ-UJ-Ogx"/>
-                            <constraint firstItem="XLR-0o-vvt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="gyd-by-de9"/>
-                            <constraint firstItem="A4y-QT-0U6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="jpN-ya-5ha"/>
-                            <constraint firstAttribute="bottom" secondItem="O6v-3s-mTZ" secondAttribute="bottom" constant="421" id="lPh-2V-CFx"/>
-                            <constraint firstItem="O6v-3s-mTZ" firstAttribute="top" secondItem="7w1-31-kNz" secondAttribute="bottom" constant="44" id="vZk-pn-9lQ"/>
-                            <constraint firstItem="A4y-QT-0U6" firstAttribute="trailing" secondItem="7w1-31-kNz" secondAttribute="trailing" id="zC4-XT-Zjh"/>
+                            <constraint firstItem="XLR-0o-vvt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="89:448" id="lhe-EZ-p3W"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
